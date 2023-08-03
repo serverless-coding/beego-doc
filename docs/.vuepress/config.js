@@ -32,6 +32,10 @@ module.exports = {
     //判断是否是生产环境
     if (NODE_ENV === "production") {
       return {
+        output: {
+          // publicPath: "/docs/.vuepress/dist/",
+          publicPath: "/",
+        },
         resolve: {
           //配置路径别名
           alias: {
@@ -60,7 +64,7 @@ module.exports = {
             text: "Version",
             ariaLabel: "Version",
             items: [
-              {text: 'developing', link: '/en-US/developing/'},
+              { text: 'developing', link: '/en-US/developing/' },
               { text: "v2.0.x", link: "/en-US/v2.0.x/" },
               { text: "v2.1.0", link: "/en-US/v2.1.0/" }
             ],
@@ -79,8 +83,8 @@ module.exports = {
             ariaLabel: "Version",
             items: [
               { text: "developing", link: "/zh/developing/" },
-              {text: 'v2.0.x', link: '/zh/v2.0.x/'},
-              {text: 'v2.1.0', link: '/zh/v2.1.0/'}
+              { text: 'v2.0.x', link: '/zh/v2.0.x/' },
+              { text: 'v2.1.0', link: '/zh/v2.1.0/' }
             ],
           },
         ],
@@ -158,7 +162,7 @@ function buildVersionSideBarEn() {
       collapsable: true,
       sidebarDepth: 0,
       children: [
-          "cache/cache_pattern.md"
+        "cache/cache_pattern.md"
       ],
     },
     "logs/",
