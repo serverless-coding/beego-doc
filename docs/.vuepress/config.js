@@ -32,9 +32,6 @@ module.exports = {
     //判断是否是生产环境
     if (NODE_ENV === "production") {
       return {
-        output: {
-          publicPath: "https://cdn.gocn.vip/beego/",
-        },
         resolve: {
           //配置路径别名
           alias: {
