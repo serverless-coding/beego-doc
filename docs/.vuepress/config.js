@@ -57,6 +57,9 @@ module.exports = {
   themeConfig: {
     sidebar: "auto",
     displayAllHeaders: true,
+    socialLinks: [
+      { icon: 'github', link: 'https://github.com/serverless-coding/beego-doc' }
+    ],
     locales: {
       "/": {
         nav: [
